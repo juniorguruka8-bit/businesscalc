@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Inventory Margin Calculator - Inventory Profit, Margin &amp; ROI | BusinessCalc.ca</title>
+<meta name="description" content="Work out the profit, margin and return on investment for a batch of inventory before you buy: units, costs, freight, ads and fees, plus the value of unsold stock.">
+<link rel="canonical" href="https://businesscalc.ca/inventory-margin-calculator/">
+<meta property="og:title" content="Free Inventory Margin Calculator - Inventory Profit, Margin &amp; ROI | BusinessCalc.ca">
+<meta property="og:description" content="Work out the profit, margin and return on investment for a batch of inventory before you buy: units, costs, freight, ads and fees, plus the value of unsold stock.">
+<meta property="og:url" content="https://businesscalc.ca/inventory-margin-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BusinessCalc.ca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='5' y='2.5' width='14' height='19' rx='2' fill='%230F766E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/config.js" defer></script>
+<script src="/assets/app.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Inventory Margin Calculator",
+  "url": "https://businesscalc.ca/inventory-margin-calculator/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (web browser)",
+  "description": "Work out the profit, margin and return on investment for a batch of inventory before you buy: units, costs, freight, ads and fees, plus the value of unsold stock.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CAD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://businesscalc.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://businesscalc.ca/#calculators"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Inventory Margin Calculator",
+      "item": "https://businesscalc.ca/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What sell-through should I expect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It varies by product and channel. A first batch of an untested product deserves a cautious estimate; a reorder of a proven seller can be higher. When in doubt, run the calculation at a pessimistic and an optimistic sell-through and see if the batch survives the pessimistic one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is unsold inventory counted against profit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Because you paid for it. The unsold value line shows what is still recoverable if the units eventually sell or are liquidated, but until then the cash is spent, so honest batch accounting charges it against this batch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between margin and ROI here?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Margin is net profit as a share of revenue. ROI is net profit as a share of everything the batch cost you. ROI answers the investor's question: for each dollar this batch consumed, how many cents came back as profit?"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should marketplace fees be per unit or for the batch?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Enter the total you expect across the units you sell, since fees usually scale with sales. If a fee is a flat listing cost for the whole batch, it belongs here too."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-calculator="inventory-margin-calculator">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+      <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+      <span>BusinessCalc<em>.ca</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/#ecommerce">E-commerce</a>
+      <a href="/#small-business">Business</a>
+      <a href="/#categories">Finance</a>
+      <a href="/resources/">Resources</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-open-search aria-label="Search calculators"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
+      <a class="btn small header-cta" href="/#calculators">Free Calculators</a>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Calculator search">
+    <div class="search-panel-head">
+      <input type="search" id="search-input" placeholder="Search profit, margin, tax, Shopify fees..." aria-label="Search calculators">
+      <button class="icon-btn" type="button" id="search-close" aria-label="Close search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
+    </div>
+    <div id="search-results" aria-live="polite"></div>
+  </div>
+</div>
+<main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/#calculators">Calculators</a> &rsaquo; <span>Inventory Margin Calculator</span></nav>
+  <section class="section-tight">
+    <h1>Inventory Margin Calculator</h1>
+    <p class="muted" style="max-width:720px;">Judge a whole batch before you buy it: investment, expected profit, margin, ROI and the cash left sitting in unsold stock.</p>
+    <div class="calc-grid">
+      <section class="panel" id="calc-inputs" aria-label="Inventory Margin Calculator inputs">
+        <h2>Your numbers</h2>
+        <div class="field"><label for="f-units">Units purchased</label><input type="text" inputmode="decimal" id="f-units" value="100" data-default="100"></div><div class="field"><label for="f-cpu">Cost per unit</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-cpu" value="12" data-default="12"></div></div><div class="field"><label for="f-price">Expected selling price</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-price" value="30" data-default="30"></div></div><div class="field"><label for="f-sold">Expected units sold</label><input type="text" inputmode="decimal" id="f-sold" value="80" data-default="80"></div><div class="field"><label for="f-freight">Shipping / freight for the batch</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-freight" value="150" data-default="150"></div></div><div class="field"><label for="f-ads">Advertising for the batch</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-ads" value="200" data-default="200"></div></div><div class="field"><label for="f-fees">Marketplace fees for the batch</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-fees" value="90" data-default="90"></div><span class="hint">Total expected fees across the units you sell.</span></div><div class="field"><label for="f-other">Other costs for the batch</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-other" value="25" data-default="25"></div></div>
+        <div class="calc-actions">
+          <button class="btn ghost small" type="button" id="btn-reset">Reset</button>
+        </div>
+      </section>
+      <section class="panel results-panel" aria-label="Inventory Margin Calculator results">
+        <div class="results-title">Your Results</div>
+        <div class="result-row hero-result"><span class="r-label">Net profit</span><span class="r-value" id="res-net">-</span></div><div class="result-row"><span class="r-label">Inventory investment</span><span class="r-value" id="res-investment">-</span></div><div class="result-row"><span class="r-label">Potential revenue (all units sold)</span><span class="r-value" id="res-potential">-</span></div><div class="result-row"><span class="r-label">Expected revenue</span><span class="r-value" id="res-revenue">-</span></div><div class="result-row"><span class="r-label">Gross profit</span><span class="r-value" id="res-gross">-</span></div><div class="result-row"><span class="r-label">Expected total cost</span><span class="r-value" id="res-totalcost">-</span></div><div class="result-row"><span class="r-label">Profit margin</span><span class="r-value" id="res-margin">-</span></div><div class="result-row"><span class="r-label">Return on investment (ROI)</span><span class="r-value" id="res-roi">-</span></div><div class="result-row"><span class="r-label">Unsold inventory value</span><span class="r-value" id="res-unsold">-</span></div>
+        <div class="insight" id="insight" aria-live="polite"></div>
+        <div class="calc-message" id="calc-message" role="alert"></div>
+        
+        <div class="calc-actions">
+  <button class="btn ghost small" type="button" data-copy-summary>Copy Summary</button>
+  <button class="btn ghost small" type="button" data-share-page>Share Calculator</button>
+  <button class="btn ghost small" type="button" data-print>Print</button>
+</div>
+      </section>
+    </div>
+    <section class="lead-box" aria-label="Free checklist">
+  <h3>Want a free Small Business Profit Checklist?</h3>
+  <p>A one-page checklist of the numbers every small business should know: margins, break-even, true employee cost and more.</p>
+  <form class="lead-form" data-endpoint-key="leadFormEndpoint">
+    <label class="small" for="lead-email" style="flex-basis:100%;">Email address</label>
+    <input type="email" id="lead-email" name="email" placeholder="you@yourbusiness.ca" autocomplete="email">
+    <button class="btn" type="submit">Send Me the Checklist</button>
+    <p class="form-note" role="status"></p>
+  </form>
+</section>
+    <details class="formula-box">
+      <summary>How is this calculated?</summary>
+      <p class="muted">A batch is judged on the full cycle: what you pay for all units plus batch costs, against the revenue from the units you realistically sell.</p>
+      <div class="formula-line">Inventory Investment = Units Purchased x Cost Per Unit</div><div class="formula-line">Gross Profit = Revenue From Units Sold - Cost Of Units Sold</div><div class="formula-line">Net Profit = Revenue - (Investment + Freight + Advertising + Fees + Other)</div><div class="formula-line">ROI = Net Profit / Expected Total Cost x 100</div><div class="formula-line">Unsold Inventory Value = Unsold Units x Cost Per Unit</div>
+    </details>
+    <h2>Worked Example</h2>
+    <div class="example-box"><p>Units purchased: <strong>100</strong> at $12 each. Selling price: $30. Expected units sold: 80. Freight: $150. Advertising: $200. Fees: $90. Other: $25.</p>
+        <p>Investment = 100 x $12 = <strong>$1,200</strong>. Revenue = 80 x $30 = <strong>$2,400</strong>. Gross profit = $2,400 - (80 x $12) = <strong>$1,440</strong>.</p>
+        <p>Total cost = $1,200 + $150 + $200 + $90 + $25 = <strong>$1,665</strong>. Net profit = $2,400 - $1,665 = <strong>$735</strong>. Margin = <strong>30.6%</strong>. ROI = <strong>44.1%</strong>. The 20 unsold units hold <strong>$240</strong> of value.</p></div>
+    <h2>How to Calculate Inventory Margin</h2>
+    <p>Think in batches, not single units. Multiply units purchased by the cost per unit for your investment. Multiply the units you realistically expect to sell, not hope to sell, by the price for expected revenue. Then subtract the whole batch cost: the inventory itself plus freight, advertising, marketplace fees and other batch expenses.</p>
+        <p>Notice that unsold units are a real cost in this view: their purchase price went out even if the revenue never came in. That is the difference between this calculator and a per-sale profit check, and it is why resellers who ignore sell-through overestimate their profits.</p>
+    <h2>Why Inventory Margin Matters</h2>
+    <p>Inventory is frozen cash. A batch with a great per-unit margin but a 50 percent sell-through can return less than a modest margin batch that sells out, and the unsold remainder keeps your money locked while trends move on. ROI and unsold value, shown next to margin here, are the numbers that keep buying decisions honest.</p>
+        <p>Use the calculator before reordering, not after: it turns "this product sells well" into a testable claim with your real freight, ad and fee numbers. For single-sale economics once the batch is selling, use the <a href="/profit-calculator/">Profit Calculator</a>.</p>
+    <h2>How to Improve Your Numbers</h2>
+    <p>Improve batch results by buying closer to proven demand (smaller first batches), negotiating per-unit cost or freight, pricing to move the last units rather than discounting the first ones, and counting fees honestly. If a batch only works at 100 percent sell-through, it probably does not work; lower the expected units sold field until the plan still survives, then decide.</p>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list"><details class="faq-item"><summary>What sell-through should I expect?</summary><p>It varies by product and channel. A first batch of an untested product deserves a cautious estimate; a reorder of a proven seller can be higher. When in doubt, run the calculation at a pessimistic and an optimistic sell-through and see if the batch survives the pessimistic one.</p></details><details class="faq-item"><summary>Why is unsold inventory counted against profit?</summary><p>Because you paid for it. The unsold value line shows what is still recoverable if the units eventually sell or are liquidated, but until then the cash is spent, so honest batch accounting charges it against this batch.</p></details><details class="faq-item"><summary>What is the difference between margin and ROI here?</summary><p>Margin is net profit as a share of revenue. ROI is net profit as a share of everything the batch cost you. ROI answers the investor's question: for each dollar this batch consumed, how many cents came back as profit?</p></details><details class="faq-item"><summary>Should marketplace fees be per unit or for the batch?</summary><p>Enter the total you expect across the units you sell, since fees usually scale with sales. If a fee is a flat listing cost for the whole batch, it belongs here too.</p></details></div>
+    <h2>Related Calculators</h2>
+    <div class="card-grid"><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/profit-calculator/">Profit Calculator</a></h3>
+  <p>See exactly how much you earn after product, shipping, advertising and other costs.</p>
+  <a class="card-cta" href="/profit-calculator/" data-related-link>Calculate Profit &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.5a1.5 1.5 0 0 0 1.5 1.1h7.9a1.5 1.5 0 0 0 1.5-1.2L20.5 7H6"/></svg></span>
+  <h3><a href="/shopify-profit-calculator/">Shopify Profit Calculator</a></h3>
+  <p>Your real per-order profit after product, shipping, ads, fees and refunds.</p>
+  <a class="card-cta" href="/shopify-profit-calculator/" data-related-link>Calculate Shopify Profit &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="17" cy="20" r="1.6"/><path d="M2 3h3l2.6 12.5a1.5 1.5 0 0 0 1.5 1.1h7.9a1.5 1.5 0 0 0 1.5-1.2L20.5 7H6"/></svg></span>
+  <h3><a href="/etsy-profit-calculator/">Etsy Profit Calculator</a></h3>
+  <p>Profit per Etsy order after listing, transaction and payment processing fees.</p>
+  <a class="card-cta" href="/etsy-profit-calculator/" data-related-link>Calculate Etsy Profit &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/pricing-calculator/">Pricing Calculator</a></h3>
+  <p>Build a selling price from your real costs plus the profit margin you want.</p>
+  <a class="card-cta" href="/pricing-calculator/" data-related-link>Calculate Price &rarr;</a>
+</article></div>
+  </section>
+</main>
+<script>
+
+window.__calcInit = function () {
+  function render() {
+    var o = { units: BC.getVal("f-units"), costPerUnit: BC.getVal("f-cpu"), price: BC.getVal("f-price"),
+      sold: BC.getVal("f-sold"), freight: BC.getVal("f-freight"), advertising: BC.getVal("f-ads"),
+      fees: BC.getVal("f-fees"), other: BC.getVal("f-other") };
+    var r = BC.calcInventory(o);
+    BC.setText("res-net", BC.fmtMoney(r.netProfit));
+    BC.setText("res-investment", BC.fmtMoney(r.investment));
+    BC.setText("res-potential", BC.fmtMoney(o.units * o.price));
+    BC.setText("res-revenue", BC.fmtMoney(r.revenue));
+    BC.setText("res-gross", BC.fmtMoney(r.grossProfit));
+    BC.setText("res-totalcost", BC.fmtMoney(r.totalCost));
+    BC.setText("res-margin", BC.fmtPct(r.margin, 1));
+    BC.setText("res-roi", BC.fmtPct(r.roi, 1));
+    BC.setText("res-unsold", BC.fmtMoney(r.unsoldValue) + " (" + BC.fmtInt(r.unsoldUnits) + " units)");
+    var msg = "";
+    if (o.sold > o.units) msg = "Expected units sold is higher than units purchased, so the calculation caps sales at the units purchased. Raise units purchased if you plan a second batch.";
+    if (o.units <= 0) msg = "Enter the number of units you plan to buy to evaluate the batch.";
+    var m = document.getElementById("calc-message");
+    m.textContent = msg; m.className = "calc-message" + (msg ? " show" : "");
+    var sellThrough = o.units > 0 ? Math.round((Math.min(o.sold, o.units) / o.units) * 100) : 0;
+    BC.setHTML("insight", "This batch ties up <strong>" + BC.fmtMoney(r.investment) + "</strong> in inventory. Selling " +
+      BC.fmtInt(Math.min(o.sold, o.units)) + " of " + BC.fmtInt(o.units) + " units (" + sellThrough + " percent) returns " +
+      BC.fmtMoney(r.revenue) + " and leaves <strong>" + BC.fmtMoney(r.netProfit) + "</strong> of net profit after every batch cost. " +
+      "The remaining " + BC.fmtInt(r.unsoldUnits) + " units hold " + BC.fmtMoney(r.unsoldValue) +
+      " of your money until they sell, which is why sell-through matters as much as margin.");
+    window.__lastCalc = { o: o, r: r };
+  }
+  BC.bindLive("calc-inputs", render);
+  document.getElementById("btn-reset").addEventListener("click", function () {
+    BC.resetForm("calc-inputs");
+  });
+};
+window.__getSummary = function () {
+  var d = window.__lastCalc; if (!d) return "";
+  return ["BusinessCalc.ca Inventory Margin Calculation",
+    "Inventory investment: " + BC.fmtMoney(d.r.investment),
+    "Expected revenue: " + BC.fmtMoney(d.r.revenue),
+    "Expected total cost: " + BC.fmtMoney(d.r.totalCost),
+    "Net profit: " + BC.fmtMoney(d.r.netProfit),
+    "Profit margin: " + BC.fmtPct(d.r.margin, 1),
+    "ROI: " + BC.fmtPct(d.r.roi, 1),
+    "Unsold inventory value: " + BC.fmtMoney(d.r.unsoldValue),
+    "Calculated using BusinessCalc.ca"].join("\n");
+};
+
+</script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+        <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+        <span>BusinessCalc<em>.ca</em></span>
+      </a>
+      <p class="small" style="color:#9CA3AF; margin-top:12px;">Free Business Calculators for Smarter Decisions. Instant, plain-English calculators for small business owners, freelancers and online sellers. Every calculation runs privately in your browser.</p>
+    </div>
+    <div class="footer-col"><h4>Profit & Revenue</h4><ul><li><a href="/profit-calculator/">Profit Calculator</a></li><li><a href="/profit-margin-calculator/">Profit Margin Calculator</a></li><li><a href="/markup-calculator/">Markup Calculator</a></li><li><a href="/break-even-calculator/">Break-Even Calculator</a></li><li><a href="/pricing-calculator/">Pricing Calculator</a></li><li><a href="/revenue-calculator/">Revenue Calculator</a></li></ul></div><div class="footer-col"><h4>E-commerce</h4><ul><li><a href="/shopify-profit-calculator/">Shopify Profit Calculator</a></li><li><a href="/etsy-profit-calculator/">Etsy Profit Calculator</a></li><li><a href="/inventory-margin-calculator/">Inventory Margin Calculator</a></li></ul></div><div class="footer-col"><h4>Employees & Freelancers</h4><ul><li><a href="/employee-cost-calculator/">Employee Cost Calculator</a></li><li><a href="/hourly-rate-calculator/">Hourly Rate Calculator</a></li></ul></div><div class="footer-col"><h4>Finance</h4><ul><li><a href="/business-loan-calculator/">Business Loan Calculator</a></li><li><a href="/sales-tax-calculator/">Sales Tax Calculator</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>BusinessCalc.ca provides calculators and estimates for educational and business planning purposes only. Results are not financial, tax, accounting, legal or investment advice. Please verify important decisions with a qualified professional.</p>
+    <p><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/resources/">Resources</a> &middot; <a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+    <p>&copy; 2026 BusinessCalc.ca. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
