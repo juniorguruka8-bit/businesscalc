@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Sales Tax Calculator - GST, HST &amp; PST by Province | BusinessCalc.ca</title>
+<meta name="description" content="Add tax to a price or extract it from a tax-inclusive total. Canadian mode covers GST, HST, PST, RST and QST for every province and territory.">
+<link rel="canonical" href="https://businesscalc.ca/sales-tax-calculator/">
+<meta property="og:title" content="Free Sales Tax Calculator - GST, HST &amp; PST by Province | BusinessCalc.ca">
+<meta property="og:description" content="Add tax to a price or extract it from a tax-inclusive total. Canadian mode covers GST, HST, PST, RST and QST for every province and territory.">
+<meta property="og:url" content="https://businesscalc.ca/sales-tax-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BusinessCalc.ca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='5' y='2.5' width='14' height='19' rx='2' fill='%230F766E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/config.js" defer></script>
+<script src="/assets/app.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Sales Tax Calculator",
+  "url": "https://businesscalc.ca/sales-tax-calculator/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (web browser)",
+  "description": "Add tax to a price or extract it from a tax-inclusive total. Canadian mode covers GST, HST, PST, RST and QST for every province and territory.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CAD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://businesscalc.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://businesscalc.ca/#calculators"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sales Tax Calculator",
+      "item": "https://businesscalc.ca/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the sales tax in Saskatchewan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Saskatchewan charges 5 percent GST plus 6 percent PST, a combined 11 percent on most goods and services. This calculator's Canadian mode uses the verified 2026 rates for every province and territory."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I extract tax from a total?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide the total by one plus the combined rate expressed as a decimal. For an 11 percent combined rate, divide by 1.11. Switch this calculator to extract mode and it does it for you, line by line."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which province's tax do I charge an online customer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Generally the tax of the province where the goods are delivered or the service is received, called the place of supply. The rules have exceptions, so confirm your situation with the CRA guidance or an accountant."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is QST calculated on top of GST?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Since 2013, Quebec's QST is calculated on the price before GST, the same base as the GST itself, so the two simply add: 5 percent plus 9.975 percent for a combined 14.975 percent."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to charge tax at all?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most businesses must register for GST/HST once taxable sales pass the small supplier threshold, and provincial rules differ. This calculator does the arithmetic; whether you must charge is a registration question for the CRA and your province."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-calculator="sales-tax-calculator">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+      <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+      <span>BusinessCalc<em>.ca</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/#ecommerce">E-commerce</a>
+      <a href="/#small-business">Business</a>
+      <a href="/#categories">Finance</a>
+      <a href="/resources/">Resources</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-open-search aria-label="Search calculators"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
+      <a class="btn small header-cta" href="/#calculators">Free Calculators</a>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Calculator search">
+    <div class="search-panel-head">
+      <input type="search" id="search-input" placeholder="Search profit, margin, tax, Shopify fees..." aria-label="Search calculators">
+      <button class="icon-btn" type="button" id="search-close" aria-label="Close search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
+    </div>
+    <div id="search-results" aria-live="polite"></div>
+  </div>
+</div>
+<main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/#calculators">Calculators</a> &rsaquo; <span>Sales Tax Calculator</span></nav>
+  <section class="section-tight">
+    <h1>Sales Tax Calculator</h1>
+    <p class="muted" style="max-width:720px;">Add tax to a price or pull it out of a tax-inclusive total, at any rate or with Canadian GST, HST, PST, RST and QST by province.</p>
+    <div class="calc-grid">
+      <section class="panel" id="calc-inputs" aria-label="Sales Tax Calculator inputs">
+        <h2>Your numbers</h2>
+        <div class="field"><label>Calculator mode</label>
+        <div class="segmented" data-seg="f-taxmode">
+          <button type="button" data-value="canada" class="active">Canadian provinces</button>
+          <button type="button" data-value="custom">Custom rate</button>
+        </div>
+        <input type="hidden" id="f-taxmode" value="canada" data-default="canada"></div>
+        <div class="field"><label>Direction</label>
+        <div class="segmented" data-seg="f-direction">
+          <button type="button" data-value="add" class="active">Add tax to an amount</button>
+          <button type="button" data-value="extract">Extract tax from a total</button>
+        </div>
+        <input type="hidden" id="f-direction" value="add" data-default="add"></div><div class="field"><label for="f-amount">Amount</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-amount" value="100" data-default="100"></div></div><div class="field" id="grp-province"><label for="f-province">Province or territory</label>
+        <select id="f-province" data-default="SK"><option value="AB">Alberta</option><option value="BC">British Columbia</option><option value="SK" selected>Saskatchewan</option><option value="MB">Manitoba</option><option value="ON">Ontario</option><option value="NS">Nova Scotia</option><option value="NB">New Brunswick</option><option value="NL">Newfoundland and Labrador</option><option value="PE">Prince Edward Island</option><option value="QC">Quebec</option><option value="YT">Yukon</option><option value="NT">Northwest Territories</option><option value="NU">Nunavut</option></select>
+        <span class="hint">Rates are the verified 2026 rates stored in one config table, so they can be updated in one place.</span></div><div class="field" id="grp-rate" style="display:none;"><div class="field"><label for="f-rate">Custom tax rate</label><div class="input-suffix"><input type="text" inputmode="decimal" id="f-rate" value="5" data-default="5"><span>%</span></div></div></div>
+        <div class="calc-actions">
+          <button class="btn ghost small" type="button" id="btn-reset">Reset</button>
+        </div>
+      </section>
+      <section class="panel results-panel" aria-label="Sales Tax Calculator results">
+        <div class="results-title">Your Results</div>
+        <div class="result-row hero-result"><span class="r-label">Total</span><span class="r-value" id="res-total">-</span></div><div class="result-row"><span class="r-label">Amount before tax</span><span class="r-value" id="res-base">-</span></div><div id="tax-lines"></div><div class="result-row"><span class="r-label">Total tax</span><span class="r-value" id="res-tax">-</span></div>
+        <div class="insight" id="insight" aria-live="polite"></div>
+        <div class="calc-message" id="calc-message" role="alert"></div>
+        <div class="notice" style="margin-top:18px;">Tax rates change from time to time and can vary by what you sell. Verify the current rates with the appropriate government authority, such as the Canada Revenue Agency or your provincial finance ministry, before filing or charging tax.</div>
+        <div class="calc-actions">
+  <button class="btn ghost small" type="button" data-copy-summary>Copy Summary</button>
+  <button class="btn ghost small" type="button" data-share-page>Share Calculator</button>
+  <button class="btn ghost small" type="button" data-print>Print</button>
+</div>
+      </section>
+    </div>
+    <section class="lead-box" aria-label="Free checklist">
+  <h3>Want a free Small Business Profit Checklist?</h3>
+  <p>A one-page checklist of the numbers every small business should know: margins, break-even, true employee cost and more.</p>
+  <form class="lead-form" data-endpoint-key="leadFormEndpoint">
+    <label class="small" for="lead-email" style="flex-basis:100%;">Email address</label>
+    <input type="email" id="lead-email" name="email" placeholder="you@yourbusiness.ca" autocomplete="email">
+    <button class="btn" type="submit">Send Me the Checklist</button>
+    <p class="form-note" role="status"></p>
+  </form>
+</section>
+    <details class="formula-box">
+      <summary>How is this calculated?</summary>
+      <p class="muted">Canadian taxes are charged on the amount before tax. In extract mode the calculator works backwards from the combined rate to find the pre-tax amount inside a total.</p>
+      <div class="formula-line">Add mode: Tax = Amount x Rate; Total = Amount + Tax</div><div class="formula-line">Extract mode: Amount Before Tax = Total / (1 + Combined Rate)</div><div class="formula-line">Saskatchewan example: combined rate = GST 5% + PST 6% = 11%</div>
+    </details>
+    <h2>Worked Example</h2>
+    <div class="example-box"><p>Amount: <strong>$100</strong>, Saskatchewan, add tax.</p>
+        <p>GST = $100 x 5% = <strong>$5.00</strong>. PST = $100 x 6% = <strong>$6.00</strong>. Total = $100 + $5 + $6 = <strong>$111.00</strong>.</p>
+        <p>Run it in extract mode on $111 and you get the $100 back: the tax inside a Saskatchewan total is 11/111 of the amount paid.</p></div>
+    <h2>How to Calculate Sales Tax</h2>
+    <p>To add tax, multiply the pre-tax amount by each rate that applies and add the results. In most provinces the federal and provincial taxes both apply to the same pre-tax amount, so you can also add the rates together first. In HST provinces there is a single combined rate instead of separate GST and PST lines.</p>
+        <p>To extract tax from a total that already includes it, divide the total by one plus the combined rate. On a $111 Saskatchewan receipt, $111 / 1.11 = $100 before tax. This matters for bookkeeping, because the tax portion of your sales is never your revenue.</p>
+    <h2>Why Sales Tax Matters</h2>
+    <p>Charging the wrong tax, or recording tax-inclusive sales as revenue, are two of the most common and most expensive small business bookkeeping errors. Getting the split right on every invoice keeps your GST/HST returns simple and your <a href="/revenue-calculator/">revenue</a> numbers honest.</p>
+        <p>Canadian rules also depend on where your customer is, not just where you are: the place of supply generally decides which province's rates apply to a sale. When in doubt, check the current rules with the Canada Revenue Agency or your accountant.</p>
+    <h2>How to Improve Your Numbers</h2>
+    <p>Build tax into your process rather than your memory: set the correct rates in your invoicing or store settings per province, review them when governments announce changes, and reconcile what you collected against what you remitted every filing period. If you price for consumers, decide deliberately whether your shelf prices include tax, and use extract mode here to see the revenue inside them.</p>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list"><details class="faq-item"><summary>What is the sales tax in Saskatchewan?</summary><p>Saskatchewan charges 5 percent GST plus 6 percent PST, a combined 11 percent on most goods and services. This calculator's Canadian mode uses the verified 2026 rates for every province and territory.</p></details><details class="faq-item"><summary>How do I extract tax from a total?</summary><p>Divide the total by one plus the combined rate expressed as a decimal. For an 11 percent combined rate, divide by 1.11. Switch this calculator to extract mode and it does it for you, line by line.</p></details><details class="faq-item"><summary>Which province's tax do I charge an online customer?</summary><p>Generally the tax of the province where the goods are delivered or the service is received, called the place of supply. The rules have exceptions, so confirm your situation with the CRA guidance or an accountant.</p></details><details class="faq-item"><summary>Is QST calculated on top of GST?</summary><p>No. Since 2013, Quebec's QST is calculated on the price before GST, the same base as the GST itself, so the two simply add: 5 percent plus 9.975 percent for a combined 14.975 percent.</p></details><details class="faq-item"><summary>Do I need to charge tax at all?</summary><p>Most businesses must register for GST/HST once taxable sales pass the small supplier threshold, and provincial rules differ. This calculator does the arithmetic; whether you must charge is a registration question for the CRA and your province.</p></details></div>
+    <h2>Related Calculators</h2>
+    <div class="card-grid"><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 12 4l9 5.5"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="6" y1="9.5" x2="6" y2="17"/><line x1="10" y1="9.5" x2="10" y2="17"/><line x1="14" y1="9.5" x2="14" y2="17"/><line x1="18" y1="9.5" x2="18" y2="17"/><line x1="3" y1="20" x2="21" y2="20"/><line x1="3" y1="17" x2="21" y2="17"/></svg></span>
+  <h3><a href="/business-loan-calculator/">Business Loan Calculator</a></h3>
+  <p>Loan payments, total interest and a full amortization schedule.</p>
+  <a class="card-cta" href="/business-loan-calculator/" data-related-link>Calculate Loan Payment &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/pricing-calculator/">Pricing Calculator</a></h3>
+  <p>Build a selling price from your real costs plus the profit margin you want.</p>
+  <a class="card-cta" href="/pricing-calculator/" data-related-link>Calculate Price &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/profit-calculator/">Profit Calculator</a></h3>
+  <p>See exactly how much you earn after product, shipping, advertising and other costs.</p>
+  <a class="card-cta" href="/profit-calculator/" data-related-link>Calculate Profit &rarr;</a>
+</article></div>
+  </section>
+</main>
+<script>
+
+window.__calcInit = function () {
+  function render() {
+    if (BC.syncSegmented) BC.syncSegmented();
+    var mode = document.getElementById("f-taxmode").value;
+    var dir = document.getElementById("f-direction").value;
+    var amount = BC.getVal("f-amount");
+    document.getElementById("grp-province").style.display = mode === "canada" ? "" : "none";
+    document.getElementById("grp-rate").style.display = mode === "custom" ? "" : "none";
+    var linesHtml = "", base, tax, total, provName = "";
+    if (mode === "canada") {
+      var r = BC.calcTaxCanada({ amount: amount, province: document.getElementById("f-province").value, mode: dir, table: (typeof CONFIG !== "undefined" && CONFIG.taxTable) ? CONFIG.taxTable : undefined });
+      base = r.base; tax = r.taxTotal; total = r.total; provName = r.province;
+      r.lines.forEach(function (l) {
+        linesHtml += '<div class="result-row"><span class="r-label">' + l.label + " (" + l.rate + '%)</span><span class="r-value">' + BC.fmtMoney(l.amount) + "</span></div>";
+      });
+    } else {
+      var r2 = BC.calcTaxCustom({ amount: amount, ratePct: BC.getVal("f-rate"), mode: dir });
+      base = r2.base; tax = r2.tax; total = r2.total;
+      linesHtml = '<div class="result-row"><span class="r-label">Tax at your rate</span><span class="r-value">' + BC.fmtMoney(tax) + "</span></div>";
+    }
+    BC.setHTML("tax-lines", linesHtml);
+    BC.setText("res-base", BC.fmtMoney(base));
+    BC.setText("res-tax", BC.fmtMoney(tax));
+    BC.setText("res-total", BC.fmtMoney(total));
+    var msg = amount <= 0 ? "Enter an amount above zero to calculate tax." : "";
+    var m = document.getElementById("calc-message");
+    m.textContent = msg; m.className = "calc-message" + (msg ? " show" : "");
+    if (dir === "add") {
+      BC.setHTML("insight", "Adding tax" + (provName ? " in <strong>" + provName + "</strong>" : "") + ": " + BC.fmtMoney(amount) +
+        " becomes <strong>" + BC.fmtMoney(total) + "</strong> after " + BC.fmtMoney(tax) + " of tax. The amount before tax stays " + BC.fmtMoney(base) + ".");
+    } else {
+      BC.setHTML("insight", "Inside that " + BC.fmtMoney(amount) + " total" + (provName ? " in <strong>" + provName + "</strong>" : "") +
+        " there is <strong>" + BC.fmtMoney(tax) + "</strong> of tax. The amount before tax is " + BC.fmtMoney(base) +
+        ", which is the revenue you record; the tax portion belongs to the government.");
+    }
+    window.__lastCalc = { amount: amount, base: base, tax: tax, total: total, dir: dir, provName: provName };
+  }
+  BC.bindLive("calc-inputs", render);
+  document.getElementById("btn-reset").addEventListener("click", function () {
+    BC.resetForm("calc-inputs");
+  });
+};
+window.__getSummary = function () {
+  var d = window.__lastCalc; if (!d) return "";
+  return ["BusinessCalc.ca Sales Tax Calculation",
+    "Amount: " + BC.fmtMoney(d.amount),
+    "Before tax: " + BC.fmtMoney(d.base),
+    "Tax: " + BC.fmtMoney(d.tax),
+    "Total: " + BC.fmtMoney(d.total),
+    "Calculated using BusinessCalc.ca"].join("\n");
+};
+
+</script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+        <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+        <span>BusinessCalc<em>.ca</em></span>
+      </a>
+      <p class="small" style="color:#9CA3AF; margin-top:12px;">Free Business Calculators for Smarter Decisions. Instant, plain-English calculators for small business owners, freelancers and online sellers. Every calculation runs privately in your browser.</p>
+    </div>
+    <div class="footer-col"><h4>Profit & Revenue</h4><ul><li><a href="/profit-calculator/">Profit Calculator</a></li><li><a href="/profit-margin-calculator/">Profit Margin Calculator</a></li><li><a href="/markup-calculator/">Markup Calculator</a></li><li><a href="/break-even-calculator/">Break-Even Calculator</a></li><li><a href="/pricing-calculator/">Pricing Calculator</a></li><li><a href="/revenue-calculator/">Revenue Calculator</a></li></ul></div><div class="footer-col"><h4>E-commerce</h4><ul><li><a href="/shopify-profit-calculator/">Shopify Profit Calculator</a></li><li><a href="/etsy-profit-calculator/">Etsy Profit Calculator</a></li><li><a href="/inventory-margin-calculator/">Inventory Margin Calculator</a></li></ul></div><div class="footer-col"><h4>Employees & Freelancers</h4><ul><li><a href="/employee-cost-calculator/">Employee Cost Calculator</a></li><li><a href="/hourly-rate-calculator/">Hourly Rate Calculator</a></li></ul></div><div class="footer-col"><h4>Finance</h4><ul><li><a href="/business-loan-calculator/">Business Loan Calculator</a></li><li><a href="/sales-tax-calculator/">Sales Tax Calculator</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>BusinessCalc.ca provides calculators and estimates for educational and business planning purposes only. Results are not financial, tax, accounting, legal or investment advice. Please verify important decisions with a qualified professional.</p>
+    <p><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/resources/">Resources</a> &middot; <a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+    <p>&copy; 2026 BusinessCalc.ca. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
