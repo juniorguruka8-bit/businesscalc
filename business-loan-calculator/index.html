@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Free Business Loan Calculator - Payments &amp; Amortization Schedule | BusinessCalc.ca</title>
+<meta name="description" content="Estimate business loan payments by amount, interest rate, term and payment frequency. Includes total interest, total repayment and a full amortization table.">
+<link rel="canonical" href="https://businesscalc.ca/business-loan-calculator/">
+<meta property="og:title" content="Free Business Loan Calculator - Payments &amp; Amortization Schedule | BusinessCalc.ca">
+<meta property="og:description" content="Estimate business loan payments by amount, interest rate, term and payment frequency. Includes total interest, total repayment and a full amortization table.">
+<meta property="og:url" content="https://businesscalc.ca/business-loan-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BusinessCalc.ca">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect x='5' y='2.5' width='14' height='19' rx='2' fill='%230F766E'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css">
+<script src="/assets/config.js" defer></script>
+<script src="/assets/app.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Business Loan Calculator",
+  "url": "https://businesscalc.ca/business-loan-calculator/",
+  "applicationCategory": "FinanceApplication",
+  "operatingSystem": "Any (web browser)",
+  "description": "Estimate business loan payments by amount, interest rate, term and payment frequency. Includes total interest, total repayment and a full amortization table.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "CAD"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://businesscalc.ca/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Calculators",
+      "item": "https://businesscalc.ca/#calculators"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Business Loan Calculator",
+      "item": "https://businesscalc.ca/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why is my lender's payment slightly different?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Lenders may calculate interest with different day counts, include fees in the balance, or compound on a different schedule (Canadian mortgages, for example, often compound semi-annually). This calculator uses the standard amortization formula with interest charged each payment period, so treat it as a close estimate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a longer term ever a good idea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It can be, when cash flow is tight and the payment must fit the budget. Just read the total interest line: that is the real price of the extra time, and it should be a deliberate trade, not a surprise."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What does the annual summary view show?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It groups the payment schedule by year: how much principal and interest you pay each year and the balance at each year end. It is the quickest way to see how slowly the balance falls in the early years."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I include loan fees in the amount?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If fees are added to the loan balance, include them in the amount you enter. Fees paid up front in cash do not change the payment, but they do change the true cost of borrowing."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body data-calculator="business-loan-calculator">
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+      <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+      <span>BusinessCalc<em>.ca</em></span>
+    </a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/#ecommerce">E-commerce</a>
+      <a href="/#small-business">Business</a>
+      <a href="/#categories">Finance</a>
+      <a href="/resources/">Resources</a>
+      <a href="/about/">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-open-search aria-label="Search calculators"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg></button>
+      <a class="btn small header-cta" href="/#calculators">Free Calculators</a>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+<div class="search-overlay" id="search-overlay" aria-hidden="true">
+  <div class="search-panel" role="dialog" aria-modal="true" aria-label="Calculator search">
+    <div class="search-panel-head">
+      <input type="search" id="search-input" placeholder="Search profit, margin, tax, Shopify fees..." aria-label="Search calculators">
+      <button class="icon-btn" type="button" id="search-close" aria-label="Close search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg></button>
+    </div>
+    <div id="search-results" aria-live="polite"></div>
+  </div>
+</div>
+<main class="wrap">
+  <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a> &rsaquo; <a href="/#calculators">Calculators</a> &rsaquo; <span>Business Loan Calculator</span></nav>
+  <section class="section-tight">
+    <h1>Business Loan Calculator</h1>
+    <p class="muted" style="max-width:720px;">Estimate loan payments, see the total interest, and read the full amortization schedule by payment or by year.</p>
+    <div class="calc-grid">
+      <section class="panel" id="calc-inputs" aria-label="Business Loan Calculator inputs">
+        <h2>Your numbers</h2>
+        <div class="field"><label for="f-amount">Loan amount</label><div class="input-prefix"><span>$</span><input type="text" inputmode="decimal" id="f-amount" value="10000" data-default="10000"></div></div><div class="field"><label for="f-rate">Annual interest rate</label><div class="input-suffix"><input type="text" inputmode="decimal" id="f-rate" value="10" data-default="10"><span>%</span></div></div><div class="field"><label for="f-years">Loan term (years)</label><input type="text" inputmode="decimal" id="f-years" value="1" data-default="1"></div><div class="field"><label for="f-freq">Payment frequency</label>
+        <select id="f-freq" data-default="12">
+          <option value="12" selected>Monthly (12 per year)</option>
+          <option value="26">Bi-weekly (26 per year)</option>
+          <option value="52">Weekly (52 per year)</option>
+          <option value="1">Annually (1 per year)</option>
+        </select></div>
+        <div class="calc-actions">
+          <button class="btn ghost small" type="button" id="btn-reset">Reset</button>
+        </div>
+      </section>
+      <section class="panel results-panel" aria-label="Business Loan Calculator results">
+        <div class="results-title">Your Results</div>
+        <div class="result-row hero-result"><span class="r-label">Estimated payment</span><span class="r-value" id="res-payment">-</span></div><div class="result-row"><span class="r-label">Total interest</span><span class="r-value" id="res-interest">-</span></div><div class="result-row"><span class="r-label">Total repayment</span><span class="r-value" id="res-repayment">-</span></div><div class="result-row"><span class="r-label">Number of payments</span><span class="r-value" id="res-count">-</span></div>
+        <div class="insight" id="insight" aria-live="polite"></div>
+        <div class="calc-message" id="calc-message" role="alert"></div>
+        <h3 style="margin-top:22px;">Amortization</h3>
+    <div class="segmented" data-seg="f-view" style="max-width:420px;">
+      <button type="button" data-value="schedule" class="active">Payment schedule</button>
+      <button type="button" data-value="annual">Annual summary</button>
+    </div>
+    <input type="hidden" id="f-view" value="schedule" data-default="schedule">
+    <div class="table-scroll" id="amort-wrap"></div>
+    <div class="notice">This calculator provides estimates and is not financial or lending advice. Actual payments depend on your lender's terms, fees and interest calculation method.</div>
+        <div class="calc-actions">
+  <button class="btn ghost small" type="button" data-copy-summary>Copy Summary</button>
+  <button class="btn ghost small" type="button" data-share-page>Share Calculator</button>
+  <button class="btn ghost small" type="button" data-print>Print</button>
+</div>
+      </section>
+    </div>
+    <section class="lead-box" aria-label="Free checklist">
+  <h3>Want a free Small Business Profit Checklist?</h3>
+  <p>A one-page checklist of the numbers every small business should know: margins, break-even, true employee cost and more.</p>
+  <form class="lead-form" data-endpoint-key="leadFormEndpoint">
+    <label class="small" for="lead-email" style="flex-basis:100%;">Email address</label>
+    <input type="email" id="lead-email" name="email" placeholder="you@yourbusiness.ca" autocomplete="email">
+    <button class="btn" type="submit">Send Me the Checklist</button>
+    <p class="form-note" role="status"></p>
+  </form>
+</section>
+    <details class="formula-box">
+      <summary>How is this calculated?</summary>
+      <p class="muted">Each payment first covers the interest on the remaining balance; the rest reduces the balance. Early payments are mostly interest, later payments mostly principal.</p>
+      <div class="formula-line">Payment = P x r x (1 + r)^n / ((1 + r)^n - 1), where r is the rate per payment period and n is the number of payments</div><div class="formula-line">Interest This Period = Remaining Balance x r</div><div class="formula-line">Total Repayment = Loan Amount + Total Interest</div>
+    </details>
+    <h2>Worked Example</h2>
+    <div class="example-box"><p>Loan amount: <strong>$10,000</strong>. Interest rate: <strong>10 percent</strong> per year. Term: <strong>1 year</strong>, monthly payments.</p>
+        <p>Estimated payment = <strong>$879.16</strong> a month. Total interest over the year is about <strong>$549.91</strong>, so the total repayment is about <strong>$10,549.91</strong>.</p>
+        <p>The schedule shows why: the first payment includes $83.33 of interest, while the last includes only a few dollars, because the balance shrinks every month.</p></div>
+    <h2>How to Calculate a Loan Payment</h2>
+    <p>A loan payment is sized so that, with interest charged on the shrinking balance, the debt reaches exactly zero at the final payment. The formula spreads the loan evenly: divide the annual rate by the number of payments per year, raise it through the amortization formula, and you get a fixed payment for the whole term.</p>
+        <p>Payment frequency matters more than most borrowers expect. Bi-weekly payments add one extra monthly-sized payment a year compared with monthly, which shortens the real payoff time and trims total interest. Compare frequencies in the calculator before signing anything.</p>
+    <h2>Why Total Interest Matters</h2>
+    <p>The payment is what you feel monthly, but total interest is what the loan actually costs. A longer term lowers the payment while raising the total cost, sometimes dramatically. For a business, the loan only makes sense if the revenue it enables, checked with the <a href="/revenue-calculator/">Revenue Calculator</a> and your margins, comfortably exceeds that cost.</p>
+        <p>Also remember the payment becomes a fixed cost. Adding it to your <a href="/break-even-calculator/">break-even</a> calculation shows how many extra sales the borrowed money has to produce each month.</p>
+    <h2>How to Improve Your Numbers</h2>
+    <p>Reduce the cost of borrowing by shortening the term when cash flow allows it, making a larger down payment, improving the rate through a better credit profile or collateral, and choosing a payment frequency that pays the balance down faster. Even a small rate difference matters over a long term, so compare total interest, not just the monthly payment, between offers.</p>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-list"><details class="faq-item"><summary>Why is my lender's payment slightly different?</summary><p>Lenders may calculate interest with different day counts, include fees in the balance, or compound on a different schedule (Canadian mortgages, for example, often compound semi-annually). This calculator uses the standard amortization formula with interest charged each payment period, so treat it as a close estimate.</p></details><details class="faq-item"><summary>Is a longer term ever a good idea?</summary><p>It can be, when cash flow is tight and the payment must fit the budget. Just read the total interest line: that is the real price of the extra time, and it should be a deliberate trade, not a surprise.</p></details><details class="faq-item"><summary>What does the annual summary view show?</summary><p>It groups the payment schedule by year: how much principal and interest you pay each year and the balance at each year end. It is the quickest way to see how slowly the balance falls in the early years.</p></details><details class="faq-item"><summary>Should I include loan fees in the amount?</summary><p>If fees are added to the loan balance, include them in the amount you enter. Fees paid up front in cash do not change the payment, but they do change the true cost of borrowing.</p></details></div>
+    <h2>Related Calculators</h2>
+    <div class="card-grid"><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/break-even-calculator/">Break-Even Calculator</a></h3>
+  <p>See how many sales you need each month to cover your fixed and variable costs.</p>
+  <a class="card-cta" href="/break-even-calculator/" data-related-link>Find Break-Even &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="20" x2="4" y2="12"/><line x1="10" y1="20" x2="10" y2="5"/><line x1="16" y1="20" x2="16" y2="9"/><line x1="2" y1="20" x2="22" y2="20"/></svg></span>
+  <h3><a href="/revenue-calculator/">Revenue Calculator</a></h3>
+  <p>Total up sales revenue, other revenue and your average revenue per sale.</p>
+  <a class="card-cta" href="/revenue-calculator/" data-related-link>Calculate Revenue &rarr;</a>
+</article><article class="calc-card">
+  <span class="card-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9.5 12 4l9 5.5"/><line x1="3" y1="9.5" x2="21" y2="9.5"/><line x1="6" y1="9.5" x2="6" y2="17"/><line x1="10" y1="9.5" x2="10" y2="17"/><line x1="14" y1="9.5" x2="14" y2="17"/><line x1="18" y1="9.5" x2="18" y2="17"/><line x1="3" y1="20" x2="21" y2="20"/><line x1="3" y1="17" x2="21" y2="17"/></svg></span>
+  <h3><a href="/sales-tax-calculator/">Sales Tax Calculator</a></h3>
+  <p>Add or extract tax at any rate, with a Canadian GST/HST/PST mode by province.</p>
+  <a class="card-cta" href="/sales-tax-calculator/" data-related-link>Calculate Sales Tax &rarr;</a>
+</article></div>
+  </section>
+</main>
+<script>
+
+window.__calcInit = function () {
+  function render() {
+    if (BC.syncSegmented) BC.syncSegmented();
+    var per = parseInt(document.getElementById("f-freq").value, 10) || 12;
+    var o = { amount: BC.getVal("f-amount"), annualRatePct: BC.getVal("f-rate"), years: BC.getVal("f-years"), perYear: per };
+    var r = BC.calcLoan(o);
+    BC.setText("res-payment", BC.fmtMoney(r.payment));
+    BC.setText("res-interest", BC.fmtMoney(r.totalInterest));
+    BC.setText("res-repayment", BC.fmtMoney(r.totalRepayment));
+    BC.setText("res-count", BC.fmtInt(r.schedule.length));
+    var view = document.getElementById("f-view").value;
+    var html = "";
+    if (view === "annual") {
+      html = '<table class="data-table"><thead><tr><th>Year</th><th>Payments</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead><tbody>';
+      r.annual.forEach(function (a) {
+        html += "<tr><td>" + a.year + "</td><td>" + a.payments + "</td><td>" + BC.fmtMoney(a.principal) + "</td><td>" + BC.fmtMoney(a.interest) + "</td><td>" + BC.fmtMoney(a.balance) + "</td></tr>";
+      });
+      html += "</tbody></table>";
+    } else {
+      html = '<table class="data-table"><thead><tr><th>Payment</th><th>Payment</th><th>Principal</th><th>Interest</th><th>Balance</th></tr></thead><tbody>';
+      r.schedule.forEach(function (s) {
+        html += "<tr><td>" + s.n + "</td><td>" + BC.fmtMoney(s.payment) + "</td><td>" + BC.fmtMoney(s.principal) + "</td><td>" + BC.fmtMoney(s.interest) + "</td><td>" + BC.fmtMoney(s.balance) + "</td></tr>";
+      });
+      html += "</tbody></table>";
+    }
+    BC.setHTML("amort-wrap", r.schedule.length ? html : '<p class="muted">Enter a loan amount and term to see the schedule.</p>');
+    var msg = "";
+    if (o.amount <= 0) msg = "Enter a loan amount above zero.";
+    if (o.years <= 0) msg = "Enter a loan term above zero years.";
+    var m = document.getElementById("calc-message");
+    m.textContent = msg; m.className = "calc-message" + (msg ? " show" : "");
+    if (r.schedule.length) {
+      var perLabel = per === 12 ? "month" : per === 26 ? "two weeks" : per === 52 ? "week" : "year";
+      BC.setHTML("insight", "Borrowing <strong>" + BC.fmtMoney(o.amount) + "</strong> at " + BC.fmtPct(o.annualRatePct, 2) +
+        " costs " + BC.fmtMoney(r.payment) + " per " + perLabel + ". Over the term you repay " + BC.fmtMoney(r.totalRepayment) +
+        " in total, of which <strong>" + BC.fmtMoney(r.totalInterest) + "</strong> is interest, about " +
+        BC.fmtPct(o.amount > 0 ? (r.totalInterest / o.amount) * 100 : 0, 1) + " on top of the amount borrowed.");
+    } else {
+      BC.setHTML("insight", "Enter your loan amount, rate and term to see the payment and the full amortization schedule.");
+    }
+    window.__lastCalc = { o: o, r: r };
+  }
+  BC.bindLive("calc-inputs", render);
+  var viewSeg = document.querySelector('[data-seg="f-view"]');
+  if (viewSeg) viewSeg.addEventListener("click", function () { setTimeout(render, 0); });
+  document.getElementById("btn-reset").addEventListener("click", function () {
+    BC.resetForm("calc-inputs");
+  });
+};
+window.__getSummary = function () {
+  var d = window.__lastCalc; if (!d) return "";
+  return ["BusinessCalc.ca Business Loan Calculation",
+    "Loan amount: " + BC.fmtMoney(d.o.amount),
+    "Interest rate: " + BC.fmtPct(d.o.annualRatePct, 2),
+    "Payment: " + BC.fmtMoney(d.r.payment),
+    "Total interest: " + BC.fmtMoney(d.r.totalInterest),
+    "Total repayment: " + BC.fmtMoney(d.r.totalRepayment),
+    "Calculated using BusinessCalc.ca"].join("\n");
+};
+
+</script>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col footer-brand">
+      <a class="logo" href="/" aria-label="BusinessCalc.ca - home">
+        <span class="logo-icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2.5" width="14" height="19" rx="2"/><line x1="8.5" y1="6.5" x2="15.5" y2="6.5"/><line x1="8.5" y1="12" x2="8.6" y2="12"/><line x1="12" y1="12" x2="12.1" y2="12"/><line x1="15.5" y1="12" x2="15.6" y2="12"/><line x1="8.5" y1="15.5" x2="8.6" y2="15.5"/><line x1="12" y1="15.5" x2="12.1" y2="15.5"/><line x1="15.5" y1="15.5" x2="15.6" y2="15.5"/><line x1="8.5" y1="19" x2="15.5" y2="19"/></svg></span>
+        <span>BusinessCalc<em>.ca</em></span>
+      </a>
+      <p class="small" style="color:#9CA3AF; margin-top:12px;">Free Business Calculators for Smarter Decisions. Instant, plain-English calculators for small business owners, freelancers and online sellers. Every calculation runs privately in your browser.</p>
+    </div>
+    <div class="footer-col"><h4>Profit & Revenue</h4><ul><li><a href="/profit-calculator/">Profit Calculator</a></li><li><a href="/profit-margin-calculator/">Profit Margin Calculator</a></li><li><a href="/markup-calculator/">Markup Calculator</a></li><li><a href="/break-even-calculator/">Break-Even Calculator</a></li><li><a href="/pricing-calculator/">Pricing Calculator</a></li><li><a href="/revenue-calculator/">Revenue Calculator</a></li></ul></div><div class="footer-col"><h4>E-commerce</h4><ul><li><a href="/shopify-profit-calculator/">Shopify Profit Calculator</a></li><li><a href="/etsy-profit-calculator/">Etsy Profit Calculator</a></li><li><a href="/inventory-margin-calculator/">Inventory Margin Calculator</a></li></ul></div><div class="footer-col"><h4>Employees & Freelancers</h4><ul><li><a href="/employee-cost-calculator/">Employee Cost Calculator</a></li><li><a href="/hourly-rate-calculator/">Hourly Rate Calculator</a></li></ul></div><div class="footer-col"><h4>Finance</h4><ul><li><a href="/business-loan-calculator/">Business Loan Calculator</a></li><li><a href="/sales-tax-calculator/">Sales Tax Calculator</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>BusinessCalc.ca provides calculators and estimates for educational and business planning purposes only. Results are not financial, tax, accounting, legal or investment advice. Please verify important decisions with a qualified professional.</p>
+    <p><a href="/about/">About</a> &middot; <a href="/contact/">Contact</a> &middot; <a href="/resources/">Resources</a> &middot; <a href="/privacy-policy/">Privacy Policy</a> &middot; <a href="/terms/">Terms of Service</a> &middot; <a href="/disclaimer/">Disclaimer</a></p>
+    <p>&copy; 2026 BusinessCalc.ca. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
